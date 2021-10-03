@@ -5,17 +5,17 @@
 <title>Demo for paper: Adversarial Robustness of Mel based speaker recognition systems</title>
 </head>
 <body>
-<h1 id="Demo for paper" style="font-size:30px"><center> Adversarial Robustness of Mel based speaker recognition systems </center></h1>
+<h1 id="Demo for paper" style="font-size:50px"><center> Adversarial Robustness of Mel based speaker recognition systems </center></h1>
 <h2 id="abstract">Abstract:</h2>
-<div style="text-align: justify">Convolutional neural networks (CNN) applied to Mel spec-trograms began to dominate the landscape of speaker recogni-tion systems. Correspondingly, it is also important to evaluatetheir robustness to adversarial attacks that remains unexploredfor  end-to-end  trained  CNNs  for  speaker  recognition.   Ourwork addresses this gap and investigates variations of the iter-ative Fast Gradient Sign Method (FGSM) to generate adver-sarial attacks.  We observe that a vanilla iterative FGSM canflip the identity of each speaker sample to every other speakerin the LibriSpeech dataset.  Surprisingly, the effort requiredto flip the identity is uncorrelated with the distance betweenthe original and target speaker embeddings. Furthermore, wepropose adversarial attacks specific to Mel spectrogram fea-tures by (a) limiting the number of pixels attacked, (b) restrict-ing changes to specific frequency bands,  and (c) restrictingchanges to particular time duration.  Using thorough qualita-tive and quantitative results, we demonstrate the fragility andnon-intuitive nature of the current CNN-based speaker recog-nition systems, where the predicted speaker identities can beflipped without any perceptible changes in the audio.</div>
+<div style="text-align: justify;font-size: 20px">Convolutional neural networks (CNN) applied to Mel spec-trograms began to dominate the landscape of speaker recognition systems. Correspondingly, it is also important to evaluate their robustness to adversarial attacks that remains unexplored for  end-to-end  trained  CNNs  for  speaker  recognition. Our work addresses this gap and investigates variations of the iterative Fast Gradient Sign Method (FGSM) to generate adversarial attacks.  We observe that a vanilla iterative FGSM can flip the identity of each speaker sample to every other speaker in the LibriSpeech dataset.  Surprisingly, the effort required to flip the identity is uncorrelated with the distance between the original and target speaker embeddings. Furthermore, we propose adversarial attacks specific to Mel spectrogram features by (a) limiting the number of pixels attacked, (b) restricting changes to specific frequency bands,  and (c) restricting changes to particular time duration.  Using thorough qualitative and quantitative results, we demonstrate the fragility and non-intuitive nature of the current CNN-based speaker recognition systems, where the predicted speaker identities can be flipped without any perceptible changes in the audio.</div>
 </div>
 <p><br /></p>
-<h4>1. Adversarial attack on speaker recognition system </h4>
+<h4 style="font-size:20px">1. Adversarial attack on speaker recognition system </h4>
 <center><p><img src="vgg.jpg" alt="arch" /></p> </center>
-<h4>2. Demo of Vanilla FGSM, top-k and top-2k attacks: </h4>
+<h4 style="font-size:20px">2. Demo of Vanilla FGSM, top-k and top-2k attacks: </h4>
 <blockquote>
 <table border=1>
-<div style="text-align: justify">A sample of particular speaker is attacked to the given target speaker with different attacks.</div>
+<div style="text-align: justify;font-size: 20px">A sample of particular speaker is attacked to the given target speaker with different attacks.</div>
 <tr>
 <td align="center"><span>Original audio</span></td>
 <td align="center"><span>Target speaker</span></td>
@@ -57,10 +57,10 @@
 </table>
 <br/>
 </blockquote>
-<h4>3. Demo of attacking different time bands. </h4>
+<h4 style="font-size:20px">3. Demo of attacking different time bands. </h4>
 <blockquote>
 <table border=1>
-<div style="text-align: justify"> A sample of a speaker is attacked only the particular time frames to the given target speaker.  </div>
+<div style="text-align: justify;font-size: 20px"> A sample of a speaker is attacked only the particular time frames to the given target speaker.  </div>
 <tr>
 <td align="center"><span>Position</span></td>
 <td align="center"><span>Original audio</span></td>
@@ -112,10 +112,10 @@
 </table>
 <br/>
 </blockquote>
-<h4>4. Demo of attacking frequency band: </h4>
+<h4 style="font-size:20px">4. Demo of attacking frequency band: </h4>
 <blockquote>
 <table border=1>
-<div style="text-align: justify">A sample of particular speaker is attacked only on certain frequency bands to the given target speaker.</div>
+<div style="text-align: justify;font-size: 20px">A sample of particular speaker is attacked only on certain frequency bands to the given target speaker.</div>
 <tr>
 <td align="center"><span>Original audio</span></td>
 <td align="center"><span>Target speaker</span></td>
